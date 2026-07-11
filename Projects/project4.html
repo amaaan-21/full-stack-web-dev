@@ -1,0 +1,79 @@
+<!--
+Next Project (Project 4)
+
+Build a Hotel Room Booking Form with:
+
+* Guest Name (required)
+* Email (required)
+* Phone Number (tel)
+* Check-in Date
+* Check-out Date
+* Number of Guests (number, minimum 1, maximum 6)
+* Room Type (select)
+    * Single
+    * Double
+    * Suite
+* Breakfast Required (checkbox)
+* Special Requests (textarea)
+* Submit button
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Form</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Book your Room Today
+        </h1>
+    </header>
+    <main>
+        <div>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="full-name" required>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" required>
+                    <label for="tel">Phone Number:</label>
+                    <input id="tel" type="tel" name="num">
+                    
+                </div>
+                <div>
+                    <label for="in" >Check-in Date</label>
+                    <input id="in" type="date" min="2026-07-10" name="in">
+                    <label for="out">Check-out Date</label>
+                    <input id="out" type="date" max="2026-07-30" name="out">
+                    <br>
+                    <label for="g">Numeber of guest</label>
+                    <input id="g" type="number" name="guest"  min="1" max="6" step="1">
+
+                </div>
+                <div>
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type">
+                        <option value=" " selected> </option>
+                        <option>Single</option>
+                        <option >Double</option>
+                        <option>Suite</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="food" type="checkbox" name="ch" required>
+                    <label for="food">Breakfast</label>
+                </div>
+                <div>
+                    <label for="requestany">Special Request</label><br>
+                    <textarea id="requestany" name="request" rows="5" cols="60"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="BOOK!">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
