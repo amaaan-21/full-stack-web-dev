@@ -1,0 +1,95 @@
+<!--
+Project 3: Job Application Form
+
+Create an HTML form containing:
+
+* Full Name — required
+* Email — required
+* Phone Number — use tel
+* Date of Birth
+* Position Applied For — dropdown
+    * Sales Associate
+    * Customer Service
+    * Software Developer
+* Resume upload — accept PDF files only
+* Experience level — radio buttons
+    * Beginner
+    * Intermediate
+    * Experienced
+* Available to work weekends — checkbox
+* Short introduction — textarea
+* Submit button
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job-Application</title>
+</head>
+<body>
+    <header>
+        <h1>Job Application Form</h1>
+    </header>
+    <main>
+        <div>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" placeholder="Full-name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="@outloook.com" required>
+                </div>
+                <div>
+                    <label for="tel">Phone Numebr:</label> 
+                    <input id="tel" type="tel" >
+                </div>
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input id="dob" type="date" required>
+                </div>
+                <div>
+                    <label for="select">Position Applied for:</label>
+                    <select id="select">
+                        
+                        <option value=" "> </option>
+                        <option>Sales Associate</option>
+                        <option>Customer Service</option>
+                        <option>Software Developer</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="pdf">Resume Upload</label>
+                    <br>
+                    <input id="pdf" type="file" accept=".pdf">
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Experience Level</legend>
+                    <input type="radio" id="bi" name="r">
+                    <label for="bi">Bginner</label>
+                    <br>
+                    <input type="radio" id="b" name="r">
+                    <label for="b">Intermediate</label>
+                    <br><input type="radio" id="big" name="r">
+                    <label for="big">Experienced</label>
+                    <br>
+                    </fieldset>
+                </div>
+                <div>
+                    <input id="chk" type="checkbox">
+                    <lable for="chk">Available to work weekends</lable>
+                </div>
+                <div>
+                    <textarea rows="5" cols="60" placeholder="short introduction"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Apply">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
